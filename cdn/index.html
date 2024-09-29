@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  
+  <body>
+    <div id="root">
+    </div>
+    <!-- <script>
+        const element = document.createElement("h1");
+        element.innerHTML = "hello there";
+        const root = document.getElementById("root");
+        root.appendChild(element)
+    </script> -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+        const element = React.createElement('h1',{id:"heading"},"hello react");
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(element)
+    </script>
+    <!-- <script src="./app.js"></script> -->
+  </body>
+</html>
